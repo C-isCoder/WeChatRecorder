@@ -48,7 +48,7 @@ public class RecorderAdapter extends ArrayAdapter<RecorderData> {
         } else {
             holder = (ViewHolder) convertView.getTag();
         }
-        holder.seconds.setText(Math.round(getItemId(position)) + "\"");
+        holder.seconds.setText(Math.round(getItem(position).time) + "\"");
         ViewGroup.LayoutParams lp = holder.length.getLayoutParams();
         lp.width = (int) (mMinItemWidth + (mMaxItemWidth / 60 * getItem(position).time));
 

@@ -86,10 +86,10 @@ public class DialogManager {
      */
     public void updateVoiceLevel(int level) {
         if (mDialog != null && mDialog.isShowing()) {
-            int resId = mContext.getResources().getIdentifier("v" + level, "mimmap", mContext.getPackageName());
+            int resId = mContext.getResources().getIdentifier("v" + level, "mipmap", mContext.getPackageName());
             mVoice.setImageResource(resId);
-            mIcon.setImageResource(R.mipmap.recorder);
-            mLable.setText("手指上滑,取消发送");
+            //mIcon.setImageResource(R.mipmap.recorder);
+            //mLable.setText("手指上滑,取消发送");
         }
     }
 }
